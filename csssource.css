@@ -1,0 +1,109 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1.0fr 1fr 0.5fr;
+  gap: 10px 10px;
+  justify-items: center;
+  border-radius: 10px;
+  padding: 10px;
+  grid-template-areas:
+    "Header Header Header Header"
+    "Info-1 Info-1 Photo-1 Info-2"
+    "Info-1 Info-1 Info-3 Photo-2"
+    "Footer Footer Footer Footer";
+}
+
+
+.Header { grid-area: Header; }
+
+.Info-1 { grid-area: Info-1; }
+
+.Photo-1 { grid-area: Photo-1; }
+
+.Photo-2 { grid-area: Photo-2; }
+
+.Info-2 { grid-area: Info-2; }
+
+.Footer { grid-area: Footer; }
+
+.Info-3 { grid-area: Info-3; }
+
+@media all and (-ms-high-contrast:none) {
+  .grid-container {
+    display: -ms-grid; 
+    align-self: center;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1.5fr 1fr 0.5fr;   
+  }
+
+  .Header {
+	  color: maroon;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    
+  }
+
+  .Info-1 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+
+  .Photo-1 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+  }
+
+  .Photo-2 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+  }
+
+  .Info-2 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+  }
+
+  .Footer {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+      align-self: center;
+	}
+
+  .Info-3 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+  }
+}
+
+h1 {
+  color: #24222D;
+ font-variant: small-caps; font-size: 75px; font-weight: bold; letter-spacing: 10px; line-height: 1; text-align: center; background-color: #CCCCCC; border: 10px solid #fff;
+  padding: 20px;
+}
+
+h2 {
+  color: #41447F;
+ font-variant: small-caps; font-size: 25px; font-weight: bold; letter-spacing: 5px; line-height: 2; text-align: center; background-color: #CCCCCC; border: 3px solid #a4aeb0;
+  padding: 5px;
+}
+
+h3 {
+  color: #41447F;
+ font-variant: small-caps; font-size: 15px; letter-spacing: 5px; line-height: 2; text-align: center; background-color: #C1C2D3; text-align: center;
+  padding-top: 5px; padding-bottom: 5px; padding-left: 55px; padding-right: 55px;
+}
+
