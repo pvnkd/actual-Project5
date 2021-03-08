@@ -28,12 +28,16 @@
 
 .Info-3 { grid-area: Info-3; }
 
+.ms-viewport{
+	width: device-width;
+}
+
 @media all and (-ms-high-contrast:none) {
   .grid-container {
     display: -ms-grid; 
     align-self: center;
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
-    -ms-grid-rows: 1fr 1.5fr 1fr 0.5fr;   
+    -ms-grid-columns: 0.5fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 0.5fr;   
   }
 
   .Header {
@@ -106,4 +110,3 @@ h3 {
  font-variant: small-caps; font-size: 15px; letter-spacing: 5px; line-height: 2; text-align: center; background-color: #C1C2D3; text-align: center;
   padding-top: 5px; padding-bottom: 5px; padding-left: 55px; padding-right: 55px;
 }
-
